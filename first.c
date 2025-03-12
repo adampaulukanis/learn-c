@@ -14,10 +14,10 @@ int main(void)
 
     printf("\a");
     printf("\b");
-    printf("\c"); // error: unknown escape sequence
-    printf("\d"); // error: unknown escape sequence
+    //printf("\c"); // error: unknown escape sequence
+    //printf("\d"); // error: unknown escape sequence
     printf("\e");
-    printf("\z"); // error: unknown escape sequence
+    //printf("\z"); // error: unknown escape sequence
 
     return 0;
 }
