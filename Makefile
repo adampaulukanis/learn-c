@@ -1,10 +1,12 @@
 CC=cc
 CFLAGS=-g -Wall -Wextra -Werror
 
-all: first
+all: first fahrenheit-celsius
 
 first: first.c
 
+fahrenheit-celsius: fahrenheit-celsius.c
+
 clean:
 	rm -rf *.core a.out
-	rm -rf first
+	rm -rf first fahrenheit-celsius
