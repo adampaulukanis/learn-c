@@ -1,12 +1,10 @@
 CC=cc
 CFLAGS=-g -Wall -Wextra -Werror
 
-all: first fahrenheit-celsius
+all: first temperature
 
-first: first.c
-
-fahrenheit-celsius: fahrenheit-celsius.c
+temperature: fahrenheit-celsius printf-and-width
 
 clean:
 	rm -rf *.core a.out
-	rm -rf first fahrenheit-celsius
+	rm -rf first fahrenheit-celsius printf-and-width
