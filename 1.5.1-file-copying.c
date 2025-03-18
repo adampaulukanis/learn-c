@@ -2,17 +2,14 @@
 
 /*
  * Copy input to output.
- * 1st version.
+ * 2nd version.
  */
 int main(void)
 {
     int c;
 
-    c = getchar();
-    while (c != EOF) {
+    while ((c = getchar()) != EOF)
         putchar(c);
-        c = getchar();
-    }
 
     return 0;
 }
