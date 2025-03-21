@@ -9,3 +9,6 @@ I want also to document my progress on this matter. Will I finish this book? Goo
  1.1 First program
  1.2 Variables and Arithmetic Expressions: temperature tables
  1.3 The For Statement
+ 1.4 Symbolic Constants
+ 1.5 Character Input and Output
+ 1.5.1 File Copying
