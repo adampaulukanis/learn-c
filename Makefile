@@ -13,7 +13,8 @@ all: 1.1-first \
 
 1.4-temperature: 1.4-fahrenhrit-celsius
 
-1.5-character-input-and-output: 1.5.1-file-copying ex1-6 ex1-7
+1.5-character-input-and-output: 1.5.1-file-copying ex1-6 ex1-7 \
+	1.5.2-character-counting
 
 clean:
 	rm -rf a.out
@@ -21,4 +22,4 @@ clean:
 	rm -rf 1.2-celsius-fahrenheit 1.2-fahrenheit-celsius 1.2-printf-and-width
 	rm -rf 1.3-fahrenheit-celsius 1.3-fahrenheit-celsius-reverse-order
 	rm -rf 1.4-fahrenhrit-celsius
-	rm -rf 1.5.1-file-copying ex1-6 ex1-7
+	rm -rf 1.5.1-file-copying ex1-6 ex1-7 1.5.2-character-counting

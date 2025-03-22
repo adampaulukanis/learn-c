@@ -12,3 +12,4 @@ I want also to document my progress on this matter. Will I finish this book? Goo
  1.4 Symbolic Constants
  1.5 Character Input and Output
  1.5.1 File Copying
+ 1.5.2 Character Counting
