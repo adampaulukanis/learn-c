@@ -1,3 +1,4 @@
+# Sort it with external: sort -V
 1.1-first
 1.2-celsius-fahrenheit
 1.2-fahrenheit-celsius
@@ -8,6 +9,7 @@
 1.5.1-file-copying
 1.5.2-character-counting
 1.5.3-line-counting
+1.5.4-word-counting
 ex1-6
 ex1-7
 ex1-8

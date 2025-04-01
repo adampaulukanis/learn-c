@@ -15,7 +15,8 @@ all: 1.1-first \
 
 1.5-character-input-and-output: 1.5.1-file-copying ex1-6 ex1-7 \
 	1.5.2-character-counting \
-	1.5.3-line-counting ex1-8 ex1-9 ex1-10
+	1.5.3-line-counting ex1-8 ex1-9 ex1-10 \
+	1.5.4-word-counting
 
 clean:
 	rm -rf a.out
@@ -25,3 +26,4 @@ clean:
 	rm -rf 1.4-fahrenhrit-celsius
 	rm -rf 1.5.1-file-copying ex1-6 ex1-7 1.5.2-character-counting
 	rm -rf 1.5.3-line-counting ex1-8 ex1-9 ex1-10
+	rm -rf 1.5.4-word-counting
