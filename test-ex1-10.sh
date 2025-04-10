@@ -1,3 +1,5 @@
+#!/bin/ksh
+
 # include assert lib
 . ./assert.sh
 
