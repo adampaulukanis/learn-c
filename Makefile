@@ -1,7 +1,8 @@
 CC=cc
 CFLAGS=-g -Wall -Wextra -Werror
 
-all: 1.1-first \
+all: tags \
+	1.1-first \
 	1.2-temperature \
 	1.3-temperature \
 	1.4-temperature \
@@ -16,7 +17,10 @@ all: 1.1-first \
 1.5-character-input-and-output: 1.5.1-file-copying ex1-6 ex1-7 \
 	1.5.2-character-counting \
 	1.5.3-line-counting ex1-8 ex1-9 ex1-10 \
-	1.5.4-word-counting
+	1.5.4-word-counting ex1-12
+
+tags:
+	ectags -R *.{c,h,sh}
 
 clean:
 	rm -rf a.out
@@ -26,4 +30,4 @@ clean:
 	rm -rf 1.4-fahrenhrit-celsius
 	rm -rf 1.5.1-file-copying ex1-6 ex1-7 1.5.2-character-counting
 	rm -rf 1.5.3-line-counting ex1-8 ex1-9 ex1-10
-	rm -rf 1.5.4-word-counting
+	rm -rf 1.5.4-word-counting ex1-12

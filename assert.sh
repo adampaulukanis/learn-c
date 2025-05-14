@@ -24,14 +24,15 @@ log_failure() {
 }
 
 assert_eq() {
-    typeset expected="$1"
-    typeset actual="$2"
-    typeset msg="${3-Error}"
+    typeset actual="$1"
+    typeset expected="$2"
+    typeset msg="${3-Error kaszanka}"
 
-    if [ "$expected" == "$actual" ] ; then
+    if [[ "X$actual" == "X$expected" ]] then
+        log_success "$msg"
         return 0
     else
-        log_failure "'$expected' == '$actual' :: $msg"
+        log_failure "$msg"
         return 1
     fi
 }
@@ -44,6 +45,6 @@ assert_not_eq() {
     if [ ! "$expected" == "$actual" ] ; then
         return 0;
     else
-        log_failure "$expected != $actual :: $msg"
+        log_failure "$msg"
     fi
 }
