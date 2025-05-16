@@ -1,4 +1,4 @@
-CC=pcc
+CC=clang
 CFLAGS=-g -Wall -Wextra -Werror
 
 all: tags \
