@@ -20,7 +20,7 @@ all: tags \
 	1.5.3-line-counting ex1-8 ex1-9 ex1-10 \
 	1.5.4-word-counting ex1-12
 
-1.6-arrays:
+1.6-arrays: 1.6-arrays.c ex1-13
 
 tags:
 	ectags -aR *.{c,h,sh}
@@ -34,4 +34,4 @@ clean:
 	rm -rf 1.5.1-file-copying ex1-6 ex1-7 1.5.2-character-counting
 	rm -rf 1.5.3-line-counting ex1-8 ex1-9 ex1-10
 	rm -rf 1.5.4-word-counting ex1-12
-	rm -rf 1.6-arrays
+	rm -rf 1.6-arrays ex1-13
