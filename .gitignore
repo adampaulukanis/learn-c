@@ -11,6 +11,7 @@
 1.5.3-line-counting
 1.5.4-word-counting
 1.6-arrays
+1.7-power
 ex1-6
 ex1-7
 ex1-8
@@ -19,4 +20,6 @@ ex1-10
 ex1-12
 ex1-13
 ex1-14
+ex1-15
 tags
+*.core

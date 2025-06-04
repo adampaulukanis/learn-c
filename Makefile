@@ -7,7 +7,8 @@ all: tags \
 	1.3-temperature \
 	1.4-temperature \
 	1.5-character-input-and-output \
-	1.6-arrays
+	1.6-arrays \
+	1.7-functions
 
 1.2-temperature: 1.2-fahrenheit-celsius 1.2-printf-and-width 1.2-celsius-fahrenheit
 
@@ -22,6 +23,8 @@ all: tags \
 
 1.6-arrays: 1.6-arrays.c ex1-13 ex1-14
 
+1.7-functions: 1.7-power ex1-15
+
 tags:
 	ectags -aR *.{c,h,sh}
 
@@ -35,3 +38,4 @@ clean:
 	rm -rf 1.5.3-line-counting ex1-8 ex1-9 ex1-10
 	rm -rf 1.5.4-word-counting ex1-12
 	rm -rf 1.6-arrays ex1-13 ex1-14
+	rm -rf 1.7-power ex1-15
