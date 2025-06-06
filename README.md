@@ -17,3 +17,4 @@ I want also to document my progress on this matter. Will I finish this book? Goo
  1.5.4 Word Counting
  1.6 Arrays
  1.7 Functions
+ 1.8 Arguments - Call by Value
