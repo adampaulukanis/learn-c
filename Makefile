@@ -1,7 +1,8 @@
-CC=clang
-CFLAGS=-g -Wall -Wextra -Werror
-CPPFLAGS!=pkg-config --cflags cmocka
-LIBS!=pkg-config --libs cmocka
+CC		= clang
+CFLAGS		= -g -O0 -Wall -Wextra -Werror
+CPPFLAGS	= -I/usr/local/include
+LDFLAGS		= -L/usr/local/lib
+LDLIBS		= -lcmocka
 
 all: tags tests \
 	1.9-character-arrays \
@@ -17,10 +18,10 @@ all: tags tests \
 tests: test-trimend test-reverse
 
 test-trimend: test-trimend.c trimend.c
-	$(CC) test-trimend.c trimend.c $(CFLAGS) $(CPPFLAGS) $(LIBS) -o test-trimend
+	$(CC) test-trimend.c trimend.c $(LDFLAGS) $(LDLIBS) $(CPPFLAGS) $(CFLAGS) -o test-trimend
 
 test-reverse: test-reverse.c reverse.c
-	$(CC) test-reverse.c reverse.c $(CFLAGS) $(CPPFLAGS) $(LIBS) -o test-reverse
+	$(CC) test-reverse.c reverse.c $(LDFLAGS) $(LDLIBS) $(CPPFLAGS) $(CFLAGS) -o test-reverse
 
 1.9-character-arrays: 1.9-longest-line ex1-16 ex1-17 ex1-18 ex1-19
 

@@ -12,7 +12,7 @@ int main(void)
     char line[MAXLINE];
 
     while ((len = mygetline(line, MAXLINE)) > 0) {
-	if (!(line[0] == '\n')) {
+	if ((line[0] != '\n') && (len > 1)) {
 	    reverse(line);
 	    printf("%s", line);
 	}
