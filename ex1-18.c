@@ -16,12 +16,10 @@ int main(void)
     int len;
     char line[MAXLINE];
 
-    while ((len = mygetline(line, MAXLINE)) > 0) {
-	if (!(line[0] == '\n')) {
-	    len = trimend(line);
-	    (void) len; /* not needed */
-	    printf("%s", line);
-	}
+    while ((len = mygetline(line, MAXLINE)) > 1) {
+	len = trimend(line);
+	(void) len; /* not needed */
+	printf("%s", line);
     }
 
     return 0;
